@@ -13,7 +13,6 @@
     </head>
     <body>
         <h1><?php echo $headerName ?></h1>
-        <br>
         <p>I am Jashlei James A. Jumayao, an aspiring Full Stack developer currently taking
             Computer Science Degree in the University of St. La Salle. </p>
         <p>My hobbies include playing single player games and studying web development. </p>
