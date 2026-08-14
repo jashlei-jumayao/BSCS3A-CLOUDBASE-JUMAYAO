@@ -6,7 +6,6 @@
     <title>Document</title>
 </head>
 <body>
-
-    <?php echo "<h1> Jashlei James A. Jumayao</h1>"; ?>
+    
 </body>
 </html>
