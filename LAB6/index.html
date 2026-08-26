@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function hello(){
+            let name = document.getElementById("name").value;
+            document.getElementById("content").innerHTML = "You entered: " + name;
+        }
+    </script>
+</head>
+<body>
+     <img id="spidey" src="https://media.gq-magazine.co.uk/photos/63468efef4f48bee2acb7062/4:3/w_1440,h_1080,c_limit/Tom-Holland-Spiderman-what-we-know-so-far.jpg" alt="Spider-Man" width="200">
+    <br>
+    <button onclick="document.getElementById('spidey').src='https://static0.srcdn.com/wordpress/wp-content/uploads/2025/08/tom-holland-s-spider-man-looking-spooked-in-no-way-home.jpg?q=49&fit=crop&w=825&dpr=2'">Don't mess with the Amazing Spider-man!</button>
+
+    <button onclick="document.getElementById('spidey').src='https://media.gq-magazine.co.uk/photos/63468efef4f48bee2acb7062/4:3/w_1440,h_1080,c_limit/Tom-Holland-Spiderman-what-we-know-so-far.jpg'">Peter Time</button>
+
+    <p id="content"></p>
+        <input type="text" id="name" placeholder="Enter Input">
+        <button onclick="hello()">Submit</button>
+
+</body>
+</html>
