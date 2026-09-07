@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="result">Enter scores to check your grade</p>
+
+    <input type="text" id="input1" placeholder="Enter Score">
+    <input type="text" id="input2" placeholder="Total Score">
+    <select name="" id="options">
+        <option value="percentage">Percentage</option>
+        <option value="passfail">Pass/Fail</option>
+    </select>
+    <button onclick="calculate()">Calculate Grade</button>
+    <br>
+    <img id="lightBulb" src="light bulb off.jpg" alt="Light Bulb" width="200">
+
+    <script>
+
+        
+        let result = document.getElementById('result');
+        let grade;
+        
+        
+
+        function calculate(){
+            let input1 = Number(document.getElementById('input1').value);
+            let input2 = Number(document.getElementById('input2').value);
+            console.log(input1);
+            console.log(input2);
+            grade = (input1 / input2) * 100;
+            console.log(grade);
+
+            if (document.getElementById('options').value == "percentage") {
+                document.getElementById('lightBulb').src = "light bulb on.jpg";
+                if (grade >= 75 && grade <= 80) {
+                    result.textContent = "Result: " + grade + "% Nice";
+                } else if (grade >= 81 && grade <= 85) {
+                    result.textContent = "Result: " + grade + "% Good";
+                } else if (grade >= 86 && grade <= 90) {
+                    result.textContent = "Result: " + grade + "% Great";
+                } else if (grade >= 91) {
+                    result.textContent = "Result: " + grade + "% Excellent";
+                } else {
+                    result.textContent = "Result: " + grade + "% Failed";
+                    document.getElementById('lightBulb').src = "light bulb off.jpg";
+                }
+
+
+            } else if (document.getElementById('options').value == "passfail") {
+                if (grade >= 75) {
+                    document.getElementById('lightBulb').src = "light bulb on.jpg";
+                    result.textContent = "Result: Pass";
+
+                } else {
+                    document.getElementById('lightBulb').src = "light bulb off.jpg";
+                    result.textContent = "Result: Fail";
+                }
+            }
+        }
+    </script>
+</body>
+</html>
