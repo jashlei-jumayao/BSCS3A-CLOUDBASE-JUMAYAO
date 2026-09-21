@@ -31,6 +31,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     <title>Document</title>
 </head>
 <body>
+    <center>
     <h3>Login System</h3>
     <form method="POST">
         <label for="username">
@@ -48,5 +49,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     <p style="color: red;">
         <?php echo $message; ?>
     </p>
+</center>
 </body>
 </html>
