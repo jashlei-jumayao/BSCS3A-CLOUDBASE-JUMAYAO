@@ -42,7 +42,7 @@
     <br>
     <h2>Technologies Used</h2>
     <table class="table ">
-        <thead class="table-dark">
+        <thead class="thead-dark">
             <tr>
                 <th>Technologies Used</th>
                 <th>Description</th>
